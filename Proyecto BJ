@@ -4,11 +4,18 @@ import random
 
 class Card:
     def __init__(self, suit: str, value: int):
-        # TODO: Initialize the attributes
+        self.suit = suit
+        self.value = value 
         pass
 
     def get_numeric_value(self) -> int:
         # TODO: Return the numeric value of the card
+        if self.value in ['K', 'Q', 'J']:
+            return 10
+        elif self.value == 'A':
+        return 11
+
+    
 
         pass
 
